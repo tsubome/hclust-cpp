@@ -17,6 +17,7 @@
 
 #include "fastcluster.h"
 
+using namespace fastclustercpp;
 
 // 2D point or vector
 class Point {

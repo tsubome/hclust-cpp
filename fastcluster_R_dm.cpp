@@ -4,6 +4,8 @@
 // Copyright: Daniel Müllner, 2011 <http://danifold.net>
 //
 
+namespace fastclustercpp {
+
 struct pos_node {
   t_index pos;
   int node;
@@ -113,3 +115,5 @@ void generate_R_dendrogram(int * const merge, double * const height, int * const
 
   order_nodes(N, merge, node_size, order);
 }
+
+}  // namespace fastclustercpp
