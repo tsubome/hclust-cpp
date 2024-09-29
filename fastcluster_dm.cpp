@@ -139,6 +139,9 @@ typedef int_fast32_t t_index;
 #if (INT_MAX > MAX_INDEX)
 #error The integer format "int" must not have a greater range than "t_index".
 #endif
+
+namespace fastclustercpp {
+
 typedef double t_float;
 
 /* Method codes.
@@ -1788,6 +1791,8 @@ static void generic_linkage_vector_alternative(const t_index N,
     }
   }
 }
+
+} // namespace fastclustercpp
 
 #if HAVE_VISIBILITY
 #pragma GCC visibility pop

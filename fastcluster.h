@@ -10,6 +10,8 @@
 #ifndef fastclustercpp_H
 #define fastclustercpp_H
 
+namespace fastclustercpp {
+
 //
 // Assigns cluster labels (0, ..., nclust-1) to the n points such
 // that the cluster result is split into nclust clusters.
@@ -73,6 +75,7 @@ enum hclust_fast_methods {
   // requires euclidean distances as distance data
   HCLUST_METHOD_MEDIAN = 3
 };
-  
+
+}  // namespace fastclustercpp
 
 #endif
