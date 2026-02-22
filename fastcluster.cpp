@@ -38,9 +38,12 @@ void cutree_k(int n, const int* merge, int nclust, int* labels) {
 
   int k,m1,m2,j,l;
 
-  if (nclust > n || nclust < 2) {
+  if (nclust < 2) {
     for (j=0; j<n; j++) labels[j] = 0;
     return;
+  }
+  if (nclust > n) {
+    nclust = n;  // clamp: each point becomes its own cluster
   }
 
   // assign to each observable the number of its last merge step

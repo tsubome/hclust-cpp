@@ -24,7 +24,7 @@ void order_nodes(const int N, const int * const merge, const t_index * const nod
 
      Runtime: Θ(N)
   */
-  auto_array_ptr<pos_node> queue(N/2);
+  auto_array_ptr<pos_node> queue(N-1);
 
   int parent;
   int child;
